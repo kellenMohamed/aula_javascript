@@ -1,0 +1,4 @@
+window.alert('My first message')
+        alert('Are you sure?')
+        window.confirm('DO U like JavaScript?')
+        window.prompt('What is your name')
