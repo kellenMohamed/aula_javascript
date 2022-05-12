@@ -1,4 +1,40 @@
 window.alert('My first message')
-        alert('Are you sure?')
-        window.confirm('DO U like JavaScript?')
-        window.prompt('What is your name')
+alert('Are you sure?')
+window.confirm('DO U like JavaScript?')
+window.prompt('What is your name')
+
+
+.exit ===>>> usado para sair do terminal
+exit ===>>> sai do terminal no VS Code
+CTRL+L ===>>> limpa o terminal
+
+typeof ===>>> mostra o tipo da variável
+
+// coment in JS
+/* */ comment in CSS
+-!-- xxx --> comment in HTML
+
+
+//Conversões:
+Number.parseInt(n)
+Number.parseFloat(n)
+s.toString() OR String(s)
+
+*** Commands:
+
+Fazer concatenação com interpolação (usa crase):
+	window.alert(`A soma dos valores é: ${String(s)}`)
+Sem interpolação é o +
+	window.alert('A soma dos valores é: ' + String(s))
+
+        window.alert('Teste Length Command: ' + ss.length)
+        window.alert('Teste Upper Command: ' + ss.toUpperCase())
+        window.alert('Teste Lower Command: ' + ss.toLowerCase())
+		
+		<strong> ${nome}</strong>! ===>>> Deixa a palavra em negrito
+		
+		
+		n1.toFixed(2)  ==>>> deixar casas no number
+		n1.toFixed(2).replace('.',',')  ===>>> substituir ponto por vírgula
+		n1.toLocaleString('pt-BR', {style: 'currency, currency: 'BRL'})   ===>>> Converter para Real
+		

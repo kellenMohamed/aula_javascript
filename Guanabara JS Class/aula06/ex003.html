@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa ...</title>
+    <style>
+        body{
+            background-color: rgb(174, 174, 211);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(122, 122, 33);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World !!!</h1>
+    <p>The Hello World curse was finished!!!</p>
+
+    <script>
+        //let or var can be used:
+        var n1 = window.prompt('Type the number 1')
+        var n2 = Number.parseFloat(window.prompt('Type the number 2'))
+        window.alert('Number 1 is: '+ n1)
+        window.alert('Number 2 is: ' + n2)
+        var s = Number.parseFloat(n1) + n2
+        window.alert('A soma dos valores é: ' + String(s))
+        window.alert(`A soma dos valores é: ${String(s)}`)
+
+        var ss = 'JavaScript'
+        window.alert('Teste Length Command: ' + ss.length)
+        window.alert('Teste Upper Command: ' + ss.toUpperCase())
+        window.alert('Teste Lower Command: ' + ss.toLowerCase())
+
+    </script>
+</body>
+</html>
