@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        div#res {
+            background-color: rgb(99, 75, 79);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><strong>Valores</strong></h1>
+    <label><strong>Fill the number 1 </strong>
+         <input type="number" name="txtn1" id="txtn1" placeholder="Digite Aqui"> 
+    </label>
+    <label><strong>Fill the number 2 </strong>
+        <input type="number" name="txtn2" id="txtn2" placeholder="Digite Aqui">
+    </label>
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res"><strong>Resultado:</strong></div>
+
+    <script>
+        function somar() {
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.querySelector('input#txtn2')
+            let res = window.document.getElementById('res')
+            // As variáveis receberão o valor do value:
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            let s = n1+ n2
+            res.innerHTML = `A soma dos campos ${n1} e ${2} é igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

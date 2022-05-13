@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - "Document object Model" </title>
+    <style>
+        body{
+            background-color: rgb(100, 29, 29);
+            color: white;
+            font: normal 18pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apresendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+
+    <script>
+        //Verificando HTML commands:
+        window.document.write('Hello World!')
+        window.document.write(window.document.charset)
+        window.document.write(window.navigator.appName)
+        window.document.write(window.document.URL)
+        
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]        
+        corpo.style.background='black'
+        p1.style.color='blue'
+
+        // Trabalhando com o command Inner:
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        window.alert(p1.innerHTML)
+        window.alert(p1.innerText)
+
+        /*
+        // 
+        // Precisa mudar o tipo do elemnto na Div (Id,name ou class)
+        //Selecionando por Id:
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+
+        // Selecionando por Name:
+        var e = document.getElementsByName('msg') [0]
+        e.innerText = 'Olá'
+        
+        // Selecionando por Classe:
+        var f = document.getElementsByClassName('msg') [0]
+        f.innerText = 'Class'
+
+        */
+
+        //var d = document.querySelector('div#msg')
+        //d.style.background = 'yellow'
+
+        var d = document.querySelector('div.msg')// Se for div do tipo class
+        d.style.background = 'red'
+
+    </script>
+</body>
+</html>

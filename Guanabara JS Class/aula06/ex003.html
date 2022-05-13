@@ -27,9 +27,13 @@
         window.alert('Number 1 is: '+ n1)
         window.alert('Number 2 is: ' + n2)
         var s = Number.parseFloat(n1) + n2
+
+        
+        window.alert('A soma dos valores é: ' + s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+
         window.alert('A soma dos valores é: ' + String(s))
         window.alert(`A soma dos valores é: ${String(s)}`)
-
+        
         var ss = 'JavaScript'
         window.alert('Teste Length Command: ' + ss.length)
         window.alert('Teste Upper Command: ' + ss.toUpperCase())

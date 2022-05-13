@@ -2,6 +2,11 @@ window.alert('My first message')
 alert('Are you sure?')
 window.confirm('DO U like JavaScript?')
 window.prompt('What is your name')
+console.log
+
+
+===   identico
+!== desigual restrito
 
 
 .exit ===>>> usado para sair do terminal
@@ -12,7 +17,7 @@ typeof ===>>> mostra o tipo da variável
 
 // coment in JS
 /* */ comment in CSS
--!-- xxx --> comment in HTML
+<!-- xxx --> comment in HTML
 
 
 //Conversões:
@@ -38,3 +43,12 @@ Sem interpolação é o +
 		n1.toFixed(2).replace('.',',')  ===>>> substituir ponto por vírgula
 		n1.toLocaleString('pt-BR', {style: 'currency, currency: 'BRL'})   ===>>> Converter para Real
 		
+		
+		
+DOM
+	Document Object Model
+	
+	
+	Instalar: plugin live server
+	
+	window.alert(p1.innerHTML)
